@@ -18,6 +18,7 @@ First, add this to an .htaccess file to make .info files viewable as plain text 
 
 Depending on if you want certain index pages for directories, pick a following code to add to your .htaccess file
 
+---
 
 Make all directories, no matter what files are in them, to show a application/http-index-format file or the default index view page.
 
@@ -25,7 +26,7 @@ Make all directories, no matter what files are in them, to show a application/ht
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule .* /http-index-format_automator.php?dir=%{REQUEST_FILENAME} [L,QSA]
-
+---
 Make all directories, except ones with a certain file (normally index.html or index.php) to show a application/http-index-format file or default index view page. Replace `FILENAME.EXT` with the index file name.
 
 
@@ -33,3 +34,5 @@ Make all directories, no matter what files are in them, to show a application/ht
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteCond %{REQUEST_FILENAME}/FILENAME.EXT !-f
     RewriteRule .* /http-index-format_automator.php?dir=%{REQUEST_FILENAME} [L,QSA]
+
+---
