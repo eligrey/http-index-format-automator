@@ -2,8 +2,7 @@
 /*
    http-index-format Automator
    @version 0.0.1
-   @license: GNU GPL, X11/MIT License
-       http://eligrey.com/about/license
+   @license: X11/MIT
    @author: Elijah Grey, http://eligrey.com
 
     Recomended use: Use in conjunction with mod_rewrite to make all directories automatically served as http-index-format.php?dir=DIRECTORY for Gecko browsers and default index view for normal browsers.
