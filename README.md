@@ -1,5 +1,5 @@
 To have comments in directories, place a file named index.info file in a directory to show comments
-in the generated application/http-index-format file
+in the generated [application/http-index-format](https://developer.mozilla.org/en-US/docs/application_http-index-format_specification) file
 
 To have php-parsed comments in directories, place a file named index.info.php in a directory and start
 every new line (not including first line) with '101: ' (without quotes)
